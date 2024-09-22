@@ -1,8 +1,8 @@
-# To-Do List Application
+# Tick-List Application
 
 ## Overview
 
-The To-Do List Application is a web-based task management tool built with Django. It allows users to create, update, and delete tasks, helping them stay organized and manage their daily activities efficiently.
+The Tick-List Application is a web-based task management tool built with Django. It allows users to create, update, and delete tasks, helping them stay organized and manage their daily activities efficiently.
 
 ## Features
 
