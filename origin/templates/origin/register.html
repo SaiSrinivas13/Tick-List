@@ -2,6 +2,7 @@
 {% block content %}
 
 <div class="header-bar">
+
     <h1> Register </h1>
 </div>
 
@@ -11,12 +12,20 @@
 
         <label>{{form.username.label}}</label>
         {{form.username}}
+        <br><br>
 
         <label>{{form.password1.label}}</label>
         {{form.password1}}
+        <div style="margin-bottom: 10px; color: #555; font-size: 0.9em;">
+            <ul style="margin: 5px 0 0 20px; padding: 0;">
+                <li>Password must be more than 8 characters long</li>
+                <li>Password should not contain your username</li>
+            </ul>
+        </div>
 
         <label>{{form.password2.label}}</label>
         {{form.password2}}
+        <br><br>
 
         <input style="margin-top: 10px;" class="button" type="submit" value="Register">
     </form>

@@ -7,7 +7,9 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
+from django.views import View
 from .models import Task
+from django.contrib import messages
 
 # Create your views here.
 class CustomLoginView(LoginView):
@@ -35,7 +37,6 @@ class RegisterPage(FormView):
             return redirect('tasks')
         return super(RegisterPage, self).get(*args, **kwargs)
 
-    
     
 class Tasklist(LoginRequiredMixin, ListView):
     model = Task
